@@ -14,3 +14,10 @@ Originally planned to use LLM for predicting moves, but ran into errors so imple
 
 ## Demo
 https://feed-with-cursor-game-git-main-sai-kumars-projects-9e343a74.vercel.app/
+
+
+## Demo Video
+
+https://github.com/user-attachments/assets/1aabad96-477f-43e6-9840-61ff3347a320
+
+
