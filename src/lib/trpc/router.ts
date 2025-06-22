@@ -1,19 +1,10 @@
 import { initTRPC } from '@trpc/server';
 import { z } from 'zod';
-import OpenAI from 'openai';
 
 const t = initTRPC.create();
 
 // Grid size constants
 const GRID_SIZE = 20;
-
-// Cell types for scoring
-enum CellType {
-  EMPTY = 0,
-  SNAKE = -1,
-  FOOD = 100,
-  WALL = -100
-}
 
 // Direction vectors
 const DIRECTIONS = [

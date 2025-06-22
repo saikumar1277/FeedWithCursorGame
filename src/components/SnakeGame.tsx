@@ -48,8 +48,6 @@ export default function SnakeGame() {
   // Move the snake toward the food using advanced pathfinding
   useEffect(() => {
     if (!food || !moving) return;
-    let interval: NodeJS.Timeout;
-    let stopped = false;
 
     const move = async () => {
       if (!lastFood.current) return;
@@ -90,9 +88,8 @@ export default function SnakeGame() {
       }
     };
 
-    interval = setInterval(move, 300); // Slightly slower for better analysis visibility
+    const interval = setInterval(move, 300); // Slightly slower for better analysis visibility
     return () => {
-      stopped = true;
       clearInterval(interval);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
